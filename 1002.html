@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework-1002</title>
+</head>
+
+<body>
+    <h1>商品資訊</h1>
+    <table border="1">
+        <caption>本月特惠商品</caption>
+        <thead>
+            <tr>
+                <th>商絣編號</th>
+                <th>商品名稱</th>
+                <th>規格</th>
+                <th>原價</th>
+                <th>特價</th>
+                <th>庫存</th>
+                <th>評價</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td>無線藍牙耳機</td>
+                <td>黑色/白色</td>
+                <td>$2500</td>
+                <td>$1990</td>
+                <td>25</td>
+                <td>★★★★</td>
+            </tr>
+            <tr>
+                <td>P002</td>
+                <td>USB-C 充電線</td>
+                <td>1.5米</td>
+                <td>$499</td>
+                <td>$299</td>
+                <td>50</td>
+                <td>★★★★★</td>
+            </tr>
+            <tr>
+                <td>P003</td>
+                <td>行動電源</td>
+                <td>10000mAh</td>
+                <td>$1200</td>
+                <td>$899</td>
+                <td>12</td>
+                <td>★★★★</td>
+            </tr>
+            <tr>
+                <td>P004</td>
+                <td>手機支架</td>
+                <td>可調式</td>
+                <td>$350</td>
+                <td>$199</td>
+                <td>30</td>
+                <td>★★★</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"><strong>總共4項商品</strong></td>
+
+                <td colspan="2"><strong>限時特惠中</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <fieldset>
+        <legend>配送選項</legend>
+        <p>配送方式 : </p>
+        <tr>
+            <input type="radio" id="male" name="gender" value="male">標準配送(約3-5工作天) -免費
+            <label for="male"> </label>
+        </tr>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">快速配送(約1-2工作天) -$100</label>
+        <label for="city"></label>
+        <select id="city" name="city">
+            <option value="">請選擇城市</option>
+            <option value="taipei">台北市</option>
+            <option value="taichung">台中市</option>
+            <option value="kaohsiung">高雄市</option>
+        </select>
+        <p>
+    </fieldset>
+</body>
+
+</html>
