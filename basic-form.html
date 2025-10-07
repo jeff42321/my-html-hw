@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本表單範例</title>
+</head>
+
+<body>
+    <h1>基本表單範例</h1>
+    <form action="/action" method="post">
+
+        <h2>輸入框</h2>
+        <p>
+            <label for="name">姓名 : </label>
+            <input id="name" name="name" type="text" placeholder="請輸入姓名" value="aa">
+        </p>
+        <p>
+            <label for="password">密碼 : </label>
+            <input id="password" type="password">
+        </p>
+        <p>
+            <label for="date">生日 : </label>
+            <input type="date">
+        </p>
+        <p>
+            <label for="age">年齡 : </label>
+            <input id="age" name="age" type="number" placeholder="請輸入年齡">
+        </p>
+        <p>性別 : </p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">男 </label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">女 </label>
+<!-- <p>興趣 : </p>
+        <input type="checkbox" id="sports" name="interests" value="sport">
+        <label for="sports">運動 </label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">音樂 </label>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">閱讀 </label> -->
+        <fieldset>
+            <legend>興趣 : </legend>
+            <input type="checkbox" id="sports" name="interests" value="sport">
+            <label for="sports">運動 </label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">音樂 </label>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">閱讀 </label>
+        </fieldset>
+        <p>居住城市 : </p>
+        <label for="city"></label>
+        <select id="city" name="city">
+            <option value="">請選擇城市</option>
+            <option value="taipei">台北市</option>
+            <option value="taichung">台中市</option>
+            <option value="kaohsiung">高雄市</option>
+        </select>
+        <p>
+            <label for="message">留言</label>
+            <textarea name="message" id="message" row="5" clos="40" placeholder="請輸入留言"></textarea>
+        </p>
+        <p>
+            <label for="avatar">頭像</label>
+            <input type="file" name="avatar" id="avatar" accept="image/*">
+        </p>
+        <button type="submit">提交</button>
+        <button type="reset">重設表單</button>">
+    </form>
+</body>
+
+</html>
